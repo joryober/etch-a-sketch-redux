@@ -2,7 +2,7 @@ let container = document.querySelector("#container");
 for (let i = 0; i < 16; i++) {
   let newDiv = document.createElement("div");
   newDiv.classList.add(`div${i}`);
-  newDiv.style.cssText = "border: 1px solid gray; width: 150px; height: 150px;";
+  newDiv.style.cssText = "width: 150px; height: 150px;";
   newDiv.addEventListener("mouseover", () => {
     newDiv.style.backgroundColor = "gray";
   });
@@ -27,9 +27,9 @@ button.addEventListener("click", () => {
     for (let i = 0; i < squaresPerSide ** 2; i++) {
       let newDiv = document.createElement("div");
       newDiv.classList.add(`div${i}`);
-      newDiv.style.cssText = `border: 1px solid gray; width: ${
+      newDiv.style.cssText = `width: ${600 / squaresPerSide}px; height: ${
         600 / squaresPerSide
-      }px; height: ${600 / squaresPerSide}px;`;
+      }px;`;
       newDiv.addEventListener("mouseover", () => {
         newDiv.style.backgroundColor = "gray";
       });
